@@ -1261,3 +1261,142 @@ Consider defining a bean of type 'com.webadmin.example.service.PersonService' in
 2018-07-31 10:57:54.395  INFO 14136 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2018-07-31 10:57:54.396  INFO 14136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2018-07-31 10:57:54.408  INFO 14136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2018-07-31 11:19:16.297  INFO 9996 --- [restartedMain] c.w.example.WebAdminExampleApplication   : Starting WebAdminExampleApplication on DESKTOP-E9V2RSU with PID 9996 (C:\Users\xni\IdeaProjects\WebAdminExample\target\classes started by xni in C:\Users\xni\IdeaProjects\WebAdminExample)
+2018-07-31 11:19:16.298  INFO 9996 --- [restartedMain] c.w.example.WebAdminExampleApplication   : No active profile set, falling back to default profiles: default
+2018-07-31 11:19:16.549  INFO 9996 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c9cf6c8: startup date [Tue Jul 31 11:19:16 ICT 2018]; root of context hierarchy
+2018-07-31 11:19:18.064  INFO 9996 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-31 11:19:18.091  INFO 9996 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-31 11:19:18.091  INFO 9996 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-07-31 11:19:18.231  INFO 9996 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-31 11:19:18.231  INFO 9996 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1684 ms
+2018-07-31 11:19:18.336  INFO 9996 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-31 11:19:18.338  INFO 9996 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-31 11:19:18.339  INFO 9996 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-31 11:19:18.339  INFO 9996 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-31 11:19:18.340  INFO 9996 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-31 11:19:18.368  WARN 9996 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static com.webadmin.example.service.PersonService com.webadmin.example.WebAdminExampleApplication.personService
+2018-07-31 11:19:18.639  INFO 9996 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c9cf6c8: startup date [Tue Jul 31 11:19:16 ICT 2018]; root of context hierarchy
+2018-07-31 11:19:18.698  INFO 9996 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/persons],produces=[application/json]}" onto public java.util.List<com.webadmin.example.domain.Person> com.webadmin.example.controller.PersonController.findAll()
+2018-07-31 11:19:18.719  INFO 9996 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-31 11:19:18.719  INFO 9996 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-31 11:19:18.740  INFO 9996 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-31 11:19:18.741  INFO 9996 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-31 11:19:18.773  INFO 9996 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-31 11:19:19.379  INFO 9996 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-31 11:19:19.413  INFO 9996 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-31 11:19:19.449  INFO 9996 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-31 11:19:19.453  INFO 9996 --- [restartedMain] c.w.example.WebAdminExampleApplication   : Started WebAdminExampleApplication in 3.393 seconds (JVM running for 3.764)
+2018-07-31 11:19:48.658  INFO 9996 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-31 11:19:48.659  INFO 9996 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-31 11:19:48.672  INFO 9996 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-07-31 11:26:38.901  INFO 15064 --- [restartedMain] c.w.example.WebAdminExampleApplication   : Starting WebAdminExampleApplication on DESKTOP-E9V2RSU with PID 15064 (C:\Users\xni\IdeaProjects\WebAdminExample\target\classes started by xni in C:\Users\xni\IdeaProjects\WebAdminExample)
+2018-07-31 11:26:38.902  INFO 15064 --- [restartedMain] c.w.example.WebAdminExampleApplication   : No active profile set, falling back to default profiles: default
+2018-07-31 11:26:39.079  INFO 15064 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6583a564: startup date [Tue Jul 31 11:26:39 ICT 2018]; root of context hierarchy
+2018-07-31 11:26:40.275  INFO 15064 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-31 11:26:40.298  INFO 15064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-31 11:26:40.298  INFO 15064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-07-31 11:26:40.419  INFO 15064 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-31 11:26:40.419  INFO 15064 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1343 ms
+2018-07-31 11:26:40.513  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-31 11:26:40.516  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-31 11:26:40.516  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-31 11:26:40.516  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-31 11:26:40.517  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-31 11:26:40.544  WARN 15064 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static com.webadmin.example.service.PersonService com.webadmin.example.WebAdminExampleApplication.personService
+2018-07-31 11:26:40.932  INFO 15064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6583a564: startup date [Tue Jul 31 11:26:39 ICT 2018]; root of context hierarchy
+2018-07-31 11:26:41.020  INFO 15064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/persons],produces=[application/json]}" onto public java.util.List<com.webadmin.example.domain.Person> com.webadmin.example.controller.PersonController.findAll()
+2018-07-31 11:26:41.028  INFO 15064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-31 11:26:41.029  INFO 15064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-31 11:26:41.066  INFO 15064 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-31 11:26:41.067  INFO 15064 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-31 11:26:41.124  INFO 15064 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-31 11:26:41.745  INFO 15064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-31 11:26:41.793  INFO 15064 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-31 11:26:41.835  INFO 15064 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-31 11:26:41.840  INFO 15064 --- [restartedMain] c.w.example.WebAdminExampleApplication   : Started WebAdminExampleApplication in 3.158 seconds (JVM running for 4.743)
+2018-07-31 11:26:51.438  INFO 15064 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-31 11:26:51.439  INFO 15064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-31 11:26:51.450  INFO 15064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-07-31 11:27:45.048  INFO 15064 --- [Thread-6] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6583a564: startup date [Tue Jul 31 11:26:39 ICT 2018]; root of context hierarchy
+2018-07-31 11:27:45.049  INFO 15064 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-31 11:27:45.354  INFO 15064 --- [restartedMain] c.w.example.WebAdminExampleApplication   : Starting WebAdminExampleApplication on DESKTOP-E9V2RSU with PID 15064 (C:\Users\xni\IdeaProjects\WebAdminExample\target\classes started by xni in C:\Users\xni\IdeaProjects\WebAdminExample)
+2018-07-31 11:27:45.355  INFO 15064 --- [restartedMain] c.w.example.WebAdminExampleApplication   : No active profile set, falling back to default profiles: default
+2018-07-31 11:27:45.359  INFO 15064 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@514074: startup date [Tue Jul 31 11:27:45 ICT 2018]; root of context hierarchy
+2018-07-31 11:27:45.942  INFO 15064 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-31 11:27:45.945  INFO 15064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-31 11:27:45.950  INFO 15064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-07-31 11:27:46.024  INFO 15064 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-31 11:27:46.027  INFO 15064 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 669 ms
+2018-07-31 11:27:46.079  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-31 11:27:46.080  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-31 11:27:46.080  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-31 11:27:46.080  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-31 11:27:46.080  INFO 15064 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-31 11:27:46.086  WARN 15064 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static com.webadmin.example.service.PersonService com.webadmin.example.WebAdminExampleApplication.personService
+2018-07-31 11:27:46.196  INFO 15064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@514074: startup date [Tue Jul 31 11:27:45 ICT 2018]; root of context hierarchy
+2018-07-31 11:27:46.207  INFO 15064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/persons],produces=[application/json]}" onto public java.util.List<com.webadmin.example.domain.Person> com.webadmin.example.controller.PersonController.findAll()
+2018-07-31 11:27:46.215  INFO 15064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-31 11:27:46.216  INFO 15064 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-31 11:27:46.225  INFO 15064 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-31 11:27:46.225  INFO 15064 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-31 11:27:46.241  INFO 15064 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-31 11:27:46.811  INFO 15064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-31 11:27:46.836  INFO 15064 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-31 11:27:46.862  INFO 15064 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-31 11:27:46.866  INFO 15064 --- [restartedMain] c.w.example.WebAdminExampleApplication   : Started WebAdminExampleApplication in 1.561 seconds (JVM running for 69.769)
+2018-07-31 11:28:36.567  INFO 18320 --- [restartedMain] c.w.example.WebAdminExampleApplication   : Starting WebAdminExampleApplication on DESKTOP-E9V2RSU with PID 18320 (C:\Users\xni\IdeaProjects\WebAdminExample\target\classes started by xni in C:\Users\xni\IdeaProjects\WebAdminExample)
+2018-07-31 11:28:36.568  INFO 18320 --- [restartedMain] c.w.example.WebAdminExampleApplication   : No active profile set, falling back to default profiles: default
+2018-07-31 11:28:36.803  INFO 18320 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7bc90d78: startup date [Tue Jul 31 11:28:36 ICT 2018]; root of context hierarchy
+2018-07-31 11:28:38.061  INFO 18320 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-31 11:28:38.091  INFO 18320 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-31 11:28:38.091  INFO 18320 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-07-31 11:28:38.195  INFO 18320 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-31 11:28:38.195  INFO 18320 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1395 ms
+2018-07-31 11:28:38.289  INFO 18320 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-31 11:28:38.291  INFO 18320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-31 11:28:38.292  INFO 18320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-31 11:28:38.292  INFO 18320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-31 11:28:38.293  INFO 18320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-31 11:28:38.317  WARN 18320 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static com.webadmin.example.service.PersonService com.webadmin.example.WebAdminExampleApplication.personService
+2018-07-31 11:28:38.518  INFO 18320 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7bc90d78: startup date [Tue Jul 31 11:28:36 ICT 2018]; root of context hierarchy
+2018-07-31 11:28:38.574  INFO 18320 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/persons],produces=[application/json]}" onto public java.util.List<com.webadmin.example.domain.Person> com.webadmin.example.controller.PersonController.findAll()
+2018-07-31 11:28:38.578  INFO 18320 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-31 11:28:38.579  INFO 18320 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-31 11:28:38.608  INFO 18320 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-31 11:28:38.609  INFO 18320 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-31 11:28:38.647  INFO 18320 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-31 11:28:39.401  INFO 18320 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-31 11:28:39.437  INFO 18320 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-31 11:28:39.480  INFO 18320 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-31 11:28:39.485  INFO 18320 --- [restartedMain] c.w.example.WebAdminExampleApplication   : Started WebAdminExampleApplication in 3.145 seconds (JVM running for 3.499)
+2018-07-31 11:28:56.495  INFO 18320 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-31 11:28:56.495  INFO 18320 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-31 11:28:56.506  INFO 18320 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 11 ms
+2018-07-31 11:30:15.131  INFO 196 --- [restartedMain] c.w.example.WebAdminExampleApplication   : Starting WebAdminExampleApplication on DESKTOP-E9V2RSU with PID 196 (C:\Users\xni\IdeaProjects\WebAdminExample\target\classes started by xni in C:\Users\xni\IdeaProjects\WebAdminExample)
+2018-07-31 11:30:15.132  INFO 196 --- [restartedMain] c.w.example.WebAdminExampleApplication   : No active profile set, falling back to default profiles: default
+2018-07-31 11:30:15.368  INFO 196 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7bc90d78: startup date [Tue Jul 31 11:30:15 ICT 2018]; root of context hierarchy
+2018-07-31 11:30:16.761  INFO 196 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-07-31 11:30:16.788  INFO 196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-31 11:30:16.788  INFO 196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-07-31 11:30:16.884  INFO 196 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-31 11:30:16.884  INFO 196 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1518 ms
+2018-07-31 11:30:16.992  INFO 196 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-07-31 11:30:16.995  INFO 196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-31 11:30:16.995  INFO 196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-31 11:30:16.995  INFO 196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-31 11:30:16.996  INFO 196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-31 11:30:17.018  WARN 196 --- [restartedMain] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: private static com.webadmin.example.service.PersonService com.webadmin.example.WebAdminExampleApplication.personService
+2018-07-31 11:30:17.229  INFO 196 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7bc90d78: startup date [Tue Jul 31 11:30:15 ICT 2018]; root of context hierarchy
+2018-07-31 11:30:17.285  INFO 196 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/v1/persons],produces=[application/json]}" onto public java.util.List<com.webadmin.example.domain.Person> com.webadmin.example.controller.PersonController.findAll()
+2018-07-31 11:30:17.288  INFO 196 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-31 11:30:17.289  INFO 196 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-31 11:30:17.312  INFO 196 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-31 11:30:17.312  INFO 196 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-31 11:30:17.343  INFO 196 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-31 11:30:17.950  INFO 196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-31 11:30:17.986  INFO 196 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-31 11:30:18.024  INFO 196 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-07-31 11:30:18.029  INFO 196 --- [restartedMain] c.w.example.WebAdminExampleApplication   : Started WebAdminExampleApplication in 3.147 seconds (JVM running for 3.513)
+2018-07-31 11:30:21.350  INFO 196 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-31 11:30:21.350  INFO 196 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-31 11:30:21.363  INFO 196 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms

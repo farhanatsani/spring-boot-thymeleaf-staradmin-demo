@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public class PersonService {
 
-    public List<Person> persons = new ArrayList<>();
+    public static List<Person> persons = new ArrayList<>();
 
     public void addPerson() {
         Person person = new Person();
