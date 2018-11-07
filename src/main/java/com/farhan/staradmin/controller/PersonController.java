@@ -1,9 +1,9 @@
-package com.webadmin.example.controller;
+package com.farhan.staradmin.controller;
 
-import com.webadmin.example.domain.Person;
-import com.webadmin.example.service.PersonService;
+import com.farhan.staradmin.domain.Person;
+import com.farhan.staradmin.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,7 +16,7 @@ public class PersonController {
     @Autowired
     private PersonService personService;
 
-    @RequestMapping(value = "persons", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "persons")
     public List<Person> findAll() {
         personService.addPerson();
         return personService.getAllPersons();

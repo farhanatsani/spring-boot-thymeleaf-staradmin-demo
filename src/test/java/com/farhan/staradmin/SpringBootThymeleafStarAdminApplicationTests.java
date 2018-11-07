@@ -1,4 +1,4 @@
-package com.webadmin.example;
+package com.farhan.staradmin;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class WebAdminExampleApplicationTests {
+public class SpringBootThymeleafStarAdminApplicationTests {
 
 	@Test
 	public void contextLoads() {

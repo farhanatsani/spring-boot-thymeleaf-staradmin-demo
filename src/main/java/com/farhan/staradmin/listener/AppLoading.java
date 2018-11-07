@@ -1,11 +1,10 @@
-package com.webadmin.example.listener;
+package com.farhan.staradmin.listener;
 
-import com.webadmin.example.domain.Person;
-import com.webadmin.example.service.PersonService;
+import com.farhan.staradmin.domain.Person;
+import com.farhan.staradmin.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
-import org.springframework.stereotype.Component;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.webadmin.example.domain;
+package com.farhan.staradmin.domain;
 
 public class Person {
 
