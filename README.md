@@ -1,13 +1,18 @@
-# WebAdminExample
+# spring-boot-thymeleaf-staradmin-demo
 
-This is Web Admin Template Example using Spring Boot and Thymeleaf
+Spring Boot with Thymeleaf and Star Admin 
 
-git clone https://github.com/farhanatsani/WebAdminExample.git
+## Installation
 
-cd WebAdminExample
+`git clone https://github.com/farhanatsani/WebAdminExample.git`
 
-mvn clean install
+`cd WebAdminExample`
 
-cd target
+`mvn clean install`
 
-java -jar WebAdminExample-0.0.1-SNAPSHOT.jar
+`cd target`
+
+`java -jar WebAdminExample-0.0.1-SNAPSHOT.jar`
+
+### Screenshoot
+![Dashboard](img/dashboard.png "Dashboard")
