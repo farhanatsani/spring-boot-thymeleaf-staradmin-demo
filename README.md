@@ -14,5 +14,6 @@ Spring Boot with Thymeleaf and Star Admin
 
 `java -jar WebAdminExample-0.0.1-SNAPSHOT.jar`
 
-### Screenshoot
+### Screenshot
+
 ![Dashboard](img/dashboard.png "Dashboard")
