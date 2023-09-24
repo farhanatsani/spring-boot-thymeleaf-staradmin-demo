@@ -11,7 +11,8 @@ public class DashboardController {
 
     @GetMapping(value = "dashboard")
     public ModelMap mmDashboard() {
-        return new ModelMap();
+        ModelMap modelMap = new ModelMap();
+        modelMap.addAttribute("key", "Total Revenue");
+        return modelMap;
     }
-
 }
