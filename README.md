@@ -17,3 +17,6 @@ Spring Boot with Thymeleaf and Star Admin
 ### Screenshot
 
 ![Dashboard](img/dashboard.png "Dashboard")
+
+### 인프런 참고해서 
+https://github.com/yeon-06/inflearnSpring/tree/master/mvc1-3
