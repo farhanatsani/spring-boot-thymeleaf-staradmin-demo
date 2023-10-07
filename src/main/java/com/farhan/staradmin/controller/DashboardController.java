@@ -11,8 +11,11 @@ public class DashboardController {
 
     @GetMapping(value = "dashboard")
     public ModelMap mmDashboard() {
+        // todo get apple stock price
+        String test = "test";
         ModelMap modelMap = new ModelMap();
         modelMap.addAttribute("key", "Total Revenue");
+        System.out.println("test: " + modelMap.toString());
         return modelMap;
     }
 }
