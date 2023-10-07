@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(value = "pages")
 public class DashboardController {
 
+
     @GetMapping(value = "dashboard")
     public ModelMap mmDashboard() {
         // todo get apple stock price
