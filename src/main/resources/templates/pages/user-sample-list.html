@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title>Home</title>
+</head>
+<body>
+<section layout:fragment="content">
+    <div class="row"><div id="updated" th:text="${param.updated}"></div></div>
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">User Sample List</h4>
+                    <p class="card-description">
+                        Let us
+                        <code>RRCUD</code>
+                    </p>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Family Name</th>
+                                <th>First Name</th>
+                                <th>Gender</th>
+                                <th>Office</th>
+                                <th>Email</th>
+                            </tr>
+                            </thead>
+                            <tbody th:each="user : ${users}">
+                            <tr>
+                                <td>
+                                    <a th:href="@{/pages/user-sample-detail/{id}(id=${user.id})}"
+                                       class="btn btn-primary"
+                                       th:text="'&lt;' + ${user.familyName} + ${user.firstName} + '&gt;의 데이터 상세조회'">
+                                    </a>
+                                </td>
+                                <td th:text="${user.familyName}"></td>
+                                <td th:text="${user.firstName}"></td>
+                                <td th:text="${user.gender}"></td>
+                                <td th:text="${user.office}"></td>
+                                <td th:text="${user.mail}"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script th:inline="javascript">
+        var updated = [[${param.updated}]];
+        if(updated == 'true'){
+            alert('수정 완료')
+        }
+    </script>
+</section>
+</body>
+</html>
+

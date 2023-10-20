@@ -11,5 +11,4 @@ import java.util.ArrayList;
 public interface MemberMapper {
     @Select("SELECT * FROM member")
     ArrayList<Member> find();
-
 }

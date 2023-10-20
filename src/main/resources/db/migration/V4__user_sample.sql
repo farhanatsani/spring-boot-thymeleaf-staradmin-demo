@@ -4,7 +4,7 @@ create table user_sample
     family_name       varchar(255)                               not null comment '姓',
     first_name        varchar(255)                               not null comment '名',
     family_kana_name  varchar(255)                               not null comment '姓カナ',
-    first_kana_name   varchar(255)                               not null comment '姓カナ',
+    first_kana_name   varchar(255)                               not null comment '名カナ',
     birthday          date                                       not null comment '生年月日',
     gender            enum ('man', 'woman')                      null comment '性別',
     office            varchar(255)                               not null comment '会社・組織名',

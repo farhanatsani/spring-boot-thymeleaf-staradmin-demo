@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title>Home</title>
+</head>
+<body>
+<section layout:fragment="content">
+
+    <div class="col-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">User Sample Detail</h4>
+                <form class="form-sample" th:action="@{/pages/updateUser}" method="post">
+                    <p class="card-description">Personal info</p>
+
+                    <!-- ID -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">ID</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" th:value="${user.id}" name="id" readonly />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Family Name -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Family Name</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" th:value="${user.familyName}" name="familyName" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- First Name -->
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">First Name</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" th:value="${user.firstName}" name="firstName" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Family Kana Name -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Family Kana Name</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" th:value="${user.familyKanaName}" name="familyKanaName" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- First Kana Name -->
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">First Kana Name</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" th:value="${user.firstKanaName}" name="firstKanaName" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Birthday -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Birthday</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" placeholder="yyyy/mm/dd" th:value="${#dates.format(user.birthday, 'yyyy/MM/dd')}" name="birthday" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Gender</label>
+                                <div class="col-sm-9">
+                                    <select class="form-control" name="gender" th:value="${user.gender}">
+                                        <option value="man" th:selected="${user.gender == 'man'}">Man</option>
+                                        <option value="woman" th:selected="${user.gender == 'woman'}">Woman</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Office -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Office</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" th:value="${user.office}" name="office" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tel -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Tel</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" th:value="${user.tel}" name="tel" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Mail</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" th:value="${user.mail.split('@')[0]}" name="mailPrefix" placeholder="Mail ID"/>
+                                </div>
+                                <div class="col-sm-1">
+                                    <p>@</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <select class="form-control" name="mailSuffix">
+                                        <option value="iinexus.com" th:selected="${user.mail.endsWith('@iinexus.com')}">iinexus.com</option>
+                                        <option value="gmail.com" th:selected="${user.mail.endsWith('@gmail.com')}">gmail.com</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Is Quit -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Is Quit</label>
+                                <div class="col-sm-4">
+                                    <div class="form-radio">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="isQuit" value="True" th:checked="${user.isQuit}"> True
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="form-radio">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="isQuit" value="False" th:checked="${!user.isQuit}"> False
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Created At & Updated At -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Created At</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" placeholder="yyyy/MM/dd HH:mm" th:value="${#dates.format(user.createdAt, 'yyyy/MM/dd HH:mm')}" name="createdAt" readonly/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Updated At</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" placeholder="yyyy/MM/dd HH:mm" th:value="${#dates.format(user.updatedAt, 'yyyy/MM/dd HH:mm')}" name="updatedAt" readonly/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Buttons for Update and Delete -->
+                    <div class="row mt-4">
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-primary mr-2">Update</button>
+                            <form th:action="@{'/pages/deleteUser/' + ${user.id}}" method="post">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>
+
